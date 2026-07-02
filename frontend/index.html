@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Student Builder Group | Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">▦</span>
+      <div>
+        <div class="logo-title">AWS STUDENT BUILDER GROUP</div>
+        <div class="logo-sub">PRMITR</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Events</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <span class="tag">WORKSHOPS & SPRINTS</span>
+    <h1>AWS <span class="highlight">SPRINTS</span></h1>
+    <p>Join practical build sessions, hackathons, and certification bootcamps to level up your cloud journey.</p>
+    <button id="add-event-btn" class="primary-btn">+ Add Event</button>
+  </header>
+  <main id="events-container" class="events-grid"></main>
+
+  <div id="loading-state" class="state-box" hidden>
+    <p>Loading events...</p>
+  </div>
+
+  <div id="empty-state" class="state-box" hidden>
+    <div class="state-icon">📅</div>
+    <h3>NO SPRINTS CONFIGURED</h3>
+    <p>We are coordinating the upcoming sprint cycle. Stay tuned!</p>
+  </div>
+
+  <div id="error-state" class="state-box error" hidden>
+    <p>Something went wrong loading events. Please try again.</p>
+  </div>
+
+  <!-- Add Event Modal (built in Step 2) -->
+  <div id="add-event-modal" class="modal" hidden></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/add-event.js"></script>
+</body>
+</html>
